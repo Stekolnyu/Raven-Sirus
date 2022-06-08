@@ -53,7 +53,7 @@ L["<Applied by "] = "<Применил(а) " --"<Applied by "
 -- Conditions.lua
 -- These strings are used in GetConditionText function to produce a detail condition description.
 -- Many are also used in the options panel in the Conditions tab for defining tests.
-L["Player Status"] = PLAYER_STATUS
+L["Player Status"] = "Данные игрока"
 L["Target Status"] = "Данные Цели"
 L["Target's Target Status"] = "Состояние Цели Цели"
 L["Focus Status"] = "Состояние Фокуса"
@@ -75,7 +75,7 @@ L["Item Ready"] = "Предмет готов"
 L["Condition Name"] = function(name) return string.format("|cFF7adbf2Название условия:|r %s", name) end --function(name) return string.format("|cFF7adbf2Condition Name:|r %s", name) end
 L["(not found)"] = "(не найдено)"
 L["Disable String"] = " |cFFef2929[ОТКЛЮЧЕНО]|r" --" |cFFef2929[DISABLED]|r"
-L["In Combat"] = GARRISON_LANDING_STATUS_MISSION_COMBAT
+L["In Combat"] = "В бою"
 L["Out Of Combat"] = "Вне боя"
 L["Is Resting"] = "Отдыхает"
 L["Not Resting"] = "Не отдыхает"
@@ -487,17 +487,17 @@ L["UIScale override"] = "Если отмечено, то при инициали
 L["UI Scale"] = "Масштабирование"
 L["Enter value between 0.1 and 1 to set during initialization."] = "Введите значение от 0.1 до 1 для установки во время загрузки."
 L["Sound Channel"] = "Звуковой канал"
-L["Master"] = MASTER
+L["Master"] = "Основной канал"
 L["If checked, sound is played in Master channel."] = "Если отмечено, звуки будут воспроизодиться в Основном канале."
 L["SFX"] = "Эффекты" --"SFX" --LEGION BUG
 L["If checked, sound is played in Sound Effects channel."] = "Если отмечено, звуки будут воспроизодиться в канале Эффекты"
-L["Music"] = VOICE_MUSIC
+L["Music"] = "Музыка"
 L["If checked, sound is played in Music channel."] = "Если отмечено, звуки будут воспроизодиться в канале Музыка."
-L["Ambience"] = VOICE_AMBIENCE
+L["Ambience"] = "Мир"
 L["If checked, sound is played in Ambience channel."] = "Если отмечено, звуки будут воспроизодиться в канале Мир."
 
 -- Spells tab
-L["Spells"] = SPELLS
+L["Spells"] = "Заклинания"
 L["Spells string"] = "Заклинания имеют соответствующие цвета и текст, которые могут быть изменены. " .. --"Spells have associated colors and labels which can be customized. " ..
 	"Измененные цвета и текст общие для всех профилей для упрощенного использования на разных персонажах. " .. --"Custom colors and labels are shared across all profiles to simplify use with multiple characters. " ..
 	"Вы также можете создать список заклинаний, оповещения о заклинания и задать внутреннее время восстановления и таймеры эффектов в данной секции.\n" --"You can also create spell lists and spell alerts and specify internal cooldowns and effect timers in this section.\n"
@@ -520,7 +520,7 @@ L["Spell Icon"] = "Иконка заклинания"
 L["Enter a spell name (or numeric identifier, optionally preceded by # for a specific spell id) for an icon to be used by default with this spell."] = "Введите имя заклинания (или ID, опционально с # в начале для конкретного ID) для использования его иконки для изменяемого заклинания."
 L["Warnings"] = "Предупреждения"
 L["Enable warnings about unrecognized spells."] = "Включить предупреждения о неопознанных заклинаниях."
-L["Reset"] = RESET
+L["Reset"] = "Сброс"
 L["Reset color and label string"] = function(s) return string.format("Сбросить цвет, текст, иконку, звук, время и цвет завершения для %s обратно к стандартным.", s) end --function(s) return string.format("Reset color, label, icon, sound, expire time and expire color for %s back to default.", s) end
 L["Reset color and label confirm"] = function(s) return string.format("СБРОС ЗАКЛИНАНИЯ\nВы уверены, что хотите сбросить цвет, текст, иконку, звук, время и цвет завершения для %s обратно к стандартным?", s) end --function(s) return string.format("RESET SPELL\nAre you sure you want to reset the color, label, icon, sound, expire time and expire color for %s back to default?", s) end
 L["Reset Colors"] = "Сброс цветов"
@@ -764,9 +764,9 @@ L["Mounted"] = "Верхом"
 L["If checked, bar group is shown when the player is mounted."] = "Если отмечено, группа отображается, когда игрок на средстве передвижения."
 L["Vehicle"] = "Транспорт"
 L["If checked, bar group is shown when the player is in a vehicle."] = "Если отмечено, группа отображается, когда игрок на транспорте."
-L["Enemy"] = ENEMY
+L["Enemy"] = "Враг"
 L["If checked, bar group is shown when the target is an enemy."] = "Если отмечено, группа отображается, когда цель враждебна."
-L["Friendly"] = FRIENDLY
+L["Friendly"] = "дружелюбный"
 L["If checked, bar group is shown when the target is friendly."] = "Если отмечено, группа отображается, когда цель дружелюбна."
 L["Neutral"] = "Нейтральный"
 L["If checked, bar group is shown when the target is neutral."] = "Если отмечено, группа отображается, когда цель нейтральна."
@@ -1026,8 +1026,8 @@ L["If checked, only add bars for buffs if cast by anyone other than the player o
 L["If checked, only add bars for buffs if cast by anyone other than player, pet or target."] = "Если отмечено, добавлять полосы для баффов, только когда они использованы кем угодно, кроме игрока и питомца и целью."
 L["If checked, only add bars for buffs if cast by player or pet."] = "Если отмечено, добавлять полосы для баффов, только когда они использованы игроком или питомцем."
 L["If checked, add bars for buffs if cast by anyone, including player."] = "Если отмечено, добавлять полосы для баффов, только когда они использованы кем угодно, включая игрока."
-L["Other"] = OTHER
-L["Other, Not Target"] = OTHER .. ", Не цели"
+L["Other"] = "Другое"
+L["Other, Not Target"] = "OTHER" .. ", Не цели"
 L["Anyone"] = "Кто угодно"
 L["Include By Type"] = "Включать по типу"
 L["Include buff types string"] = "Если отмечено, включать только выбранные типы баффов (заметьте, баффы могут соответствовать нескольким типам)." --"If checked, include only the selected types of buffs (note buffs may match multiple types)."
@@ -1416,7 +1416,7 @@ L["Enter name of anchor frame to attach to (leave blank to enable bar group atta
 L["Anchor Point"] = "Точка крепления"
 L["Select point on anchor frame to attach to."] = "Выберите точку крепления к якорю."
 L["Reset attachment options."] = "Сброс параметров крепления."
-L["Frame Stack"] = DEBUG_FRAMESTACK
+L["Frame Stack"] = "DEBUG_FRAMESTACK"
 L["Toggle showing Blizzard's frame stack tooltips."] = "Переключить отображение подсказки рамок Blizzard."
 
 -- Bar Groups > Appearance tab
@@ -1531,9 +1531,9 @@ L["Refresh current value in condition's summary."] = "обновить теку�
 
 -- Conditions > Tests > Player Status
 L["Enable Test"] = "Включить тест"
-L["Enable"] = ENABLE
+L["Enable"] = "Включить"
 L["If checked, enable this test."] = "Если отмечено, включить данный тест."
-L["Combat"] = COMBAT
+L["Combat"] = "Бой"
 L["If checked, test combat status."] = "Если отмечено, тестировать статус боя."
 L["If checked, must be in combat."] = "Если отмечено, должен быть в бою."
 L["If checked, must be out of combat."] = "Если отмечено, должен быть вне боя."
@@ -1576,7 +1576,7 @@ L["If checked, test if the player has a pet."] = "Если отмечено, т�
 L["If checked, player must have a pet."] = "Если отмечено, у игрока должен быть питомец."
 L["If checked, player must not have a pet"] = "Если отмечено, у игрока должно быть питомеца."
 L["Player"] = "Игрок" --"Player"
-L["Pet"] = PET
+L["Pet"] = "питомец"
 L["Level"] = "Уровень"
 L["If checked, test the player's level."] = "Если отмечено, тестировать уровень игрока."
 L["If checked, player must be at least at this level, otherwise must be lower."] = "Если отмечено, игрок должен быть хотя бы этого уровня, в противном случае ниже."
@@ -1591,10 +1591,10 @@ L["If checked, player must have at least this many combo points, otherwise must 
 L["If checked, test the player's totem status."] = "Если отмечено, тестировать статус тотемов игрока."
 L["Totem Name"] = "Название тотема"
 L["Enter name of specific totem to check is active."] = "Введите название определенного тотема для проверки существования."
-L["Health"] = HEALTH
-L["Power"] = ATTACK_POWER
-L["Minimum"] = MINIMUM
-L["Combo Points"] = COMBO_POINTS
+L["Health"] = "Здровье"
+L["Power"] = "Сила атаки"
+L["Minimum"] = "Минимум"
+L["Combo Points"] = "Серия приемов"
 L["If checked, test if the player has a mainhand weapon equipped with at least the specified item level."] = "Если отмечено, тестировать если игрок экипирован оружием в правой руке хотя бы указанного уровеня предмета."
 L["If checked, test if the player has an offhand weapon equipped with at least the specified item level."] = "Если отмечено, тестировать если игрок экипирован оружием в левой руке хотя бы указанного уровеня предмета."
 L["If checked, test if the player is in a stance."] = "Если отмечено, тестировать стойку игрока."
@@ -1608,9 +1608,9 @@ L["Weapons"] = "Оружия"
 L["Mainhand"] = "Правая рука"
 L["Offhand"] = "Левая рука"
 L["Stance"] = "Стойка"
-L["Talent"] = TALENT
-L["Specialization"] = SPECIALIZATION
-L["Spellbook"] = SPELLBOOK
+L["Talent"] = "Талант"
+L["Specialization"] = "Специализация"
+L["Spellbook"] = "Книга заклинаний"
 L["Trivial"] = "Тривиальный"
 L["Minus"] = "Минус"
 
@@ -1857,7 +1857,7 @@ L["Enter seconds for cooldown time left check."] = "Введите время в
 
 -- Conditions > Tests > Spell Ready
 L["Spell Entry"] = "Ввод заклинания"
-L["Spell"] = STAT_CATEGORY_SPELL
+L["Spell"] = "STAT_CATEGORY_SPELL"
 L["Enter spell name (or numeric identifier, optionally preceded by # for a specific spell id) to test if ready to be cast."] = "Введите название заклинания (или ID, опционально с # в начале для конкретного ID) для теста возможности произнесения."
 L["If checked, test if spell is on global cooldown, otherwise ignore global cooldown."] = "Если отмечено, тестировать если заклинание на ГКД, в противном случае игнорировать ГКД."
 L["Is Usable"] = "Возможно"
@@ -1875,7 +1875,7 @@ L["If checked, test focus casting."] = "Если отмечено, тестир�
 
 -- Conditions > Tests > Item Ready
 L["Item Entry"] = "Ввод предмета"
-L["Item"] = ENCOUNTER_JOURNAL_ITEM
+L["Item"] = "ENCOUNTER_JOURNAL_ITEM"
 L["Enter name or itemID of item to test. Item must be in the player's bags. Use generic cooldown names for Potions and Elixirs."] = "Введите название или ID предмета для теста. Предмет должен быть в инвентаре. Используйте стандартные имена кулдаунов для Зелий и Эликсиров."
 L["Ready"] = "Готово"
 L["If checked, test if the item is ready to use."] = "Если отмечено, тестировать готовность предмета."
@@ -1898,7 +1898,7 @@ L["And/Or"] = "И/Или"
 L["And"] = "И"
 L["Or"] = "Или"
 L["Toggle between logical \"And\" and \"Or\" for this dependecy."] = "Переключать между логическими \"И\" и \"Или\" для этой зависимости."
-L["Delete"] = DELETE
+L["Delete"] = "Удалить"
 L["Delete this condition from the dependencies list."] = "Удалить это условие из списка зависимостей."
 L["Test Evaluation"] = "Оценка теста"
 L["If checked, evaluate all enabled tests with logical \"And\" (i.e., all tests must be true), othewise use logical \"Or\" (i.e., only one test must be true)."] = "Если отмечено, оценить все включенные тесты с логическим \"И\" (т.е. все тесты должны быть истинны), в противном случае использовать логическое \"Или\" (т.е. только один тест должен быть истинным)."
